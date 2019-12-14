@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="1647.0" prefWidth="1285.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <ScrollPane prefHeight="1627.0" prefWidth="1332.0" GridPane.rowIndex="1">
+         <content>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1637.0" prefWidth="1424.0" style="-fx-background-color: #153D65;">
+               <children>
+                  <TextField fx:id="tf1" layoutX="39.0" layoutY="67.0" prefHeight="16.0" prefWidth="135.0" promptText="Enter Name" />
+                  <TextField fx:id="tfx" layoutX="192.0" layoutY="67.0" prefHeight="16.0" prefWidth="125.0" />
+                  <TextField fx:id="tfy" layoutX="343.0" layoutY="67.0" prefHeight="26.0" prefWidth="135.0" />
+                  <Button fx:id="b1" layoutX="493.0" layoutY="67.0" mnemonicParsing="false" onAction="#fun" style="-fx-background-color: #E83E3E;" text="Add" />
+                  <Label layoutX="50.0" layoutY="37.0" text="Name" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Label layoutX="222.0" layoutY="37.0" text="Xcord" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Label layoutX="381.0" layoutY="37.0" text="Ycord" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Separator layoutX="14.0" layoutY="117.0" prefHeight="0.0" prefWidth="585.0" />
+                  <Label layoutX="37.0" layoutY="14.0" prefHeight="25.0" prefWidth="138.0" text="Add Vertex" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Button layoutX="232.0" layoutY="167.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #E83E3E;" text="Search" />
+                  <TextField fx:id="tfs" layoutX="42.0" layoutY="167.0" />
+                  <Label layoutX="32.0" layoutY="130.0" prefHeight="25.0" prefWidth="163.0" text="Search Vertex" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Separator layoutX="14.0" layoutY="219.0" prefHeight="3.0" prefWidth="585.0" />
+                  <TextField fx:id="tfd" layoutX="42.0" layoutY="269.0" />
+                  <Button layoutX="234.0" layoutY="269.0" mnemonicParsing="false" onAction="#del" style="-fx-background-color: #E83E3E;" text="delete" />
+                  <Label layoutX="36.0" layoutY="238.0" text="Delete vertex" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Separator layoutX="21.0" layoutY="320.0" prefHeight="3.0" prefWidth="572.0" />
+                  <TextField fx:id="tf4" layoutX="42.0" layoutY="363.0" />
+                  <Label layoutX="35.0" layoutY="334.0" text="Modify Vertex" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Button layoutX="404.0" layoutY="363.0" mnemonicParsing="false" onAction="#fun1" style="-fx-background-color: #E83E3E;" text="Modify" />
+                  <TextField fx:id="tf5" layoutX="226.0" layoutY="363.0" prefHeight="26.0" prefWidth="75.0" />
+                  <TextField fx:id="tf6" layoutX="314.0" layoutY="363.0" prefHeight="26.0" prefWidth="75.0" />
+                  <Separator layoutX="23.0" layoutY="414.0" prefHeight="3.0" prefWidth="572.0" />
+                  <Label layoutX="51.0" layoutY="424.0" prefHeight="25.0" prefWidth="129.0" text="Add edge" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="tf7" layoutX="39.0" layoutY="459.0" prefHeight="26.0" prefWidth="135.0" />
+                  <TextField fx:id="tf8" layoutX="185.0" layoutY="459.0" prefHeight="26.0" prefWidth="125.0" />
+                  <Button fx:id="b2" layoutX="413.0" layoutY="459.0" mnemonicParsing="false" onAction="#fun2" style="-fx-background-color: #E83E3E;" text="Add" />
+                  <TextField fx:id="tf9" layoutX="326.0" layoutY="459.0" prefHeight="26.0" prefWidth="69.0" />
+                  <Separator layoutX="23.0" layoutY="494.0" prefHeight="3.0" prefWidth="572.0" />
+                  <TextField fx:id="tfe1" layoutX="32.0" layoutY="539.0" prefHeight="26.0" prefWidth="135.0" />
+                  <TextField fx:id="tfe2" layoutX="180.0" layoutY="539.0" prefHeight="26.0" prefWidth="125.0" />
+                  <Label layoutX="46.0" layoutY="506.0" text="search edge" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Button layoutX="321.0" layoutY="539.0" mnemonicParsing="false" onAction="#searchedge" style="-fx-background-color: #E83E3E;" text="search" />
+                  <Separator layoutX="25.0" layoutY="575.0" prefHeight="3.0" prefWidth="572.0" />
+                  <Label layoutX="59.0" layoutY="578.0" text="Delete Edge" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="tfd1" layoutX="39.0" layoutY="609.0" prefHeight="26.0" prefWidth="135.0" />
+                  <TextField fx:id="tfd2" layoutX="185.0" layoutY="609.0" prefHeight="26.0" prefWidth="125.0" />
+                  <Button layoutX="322.0" layoutY="609.0" mnemonicParsing="false" onAction="#deleteedge" style="-fx-background-color: #E83E3E;" text="delete" />
+                  <Separator layoutX="15.0" layoutY="650.0" prefHeight="3.0" prefWidth="572.0" />
+                  <Label layoutX="36.0" layoutY="660.0" text="Modify Edge" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="tfm1" layoutX="39.0" layoutY="697.0" prefHeight="26.0" prefWidth="135.0" />
+                  <TextField fx:id="tfm2" layoutX="180.0" layoutY="697.0" prefHeight="26.0" prefWidth="125.0" />
+                  <Button layoutX="380.0" layoutY="697.0" mnemonicParsing="false" onAction="#Modifyedge" style="-fx-background-color: #E83E3E;" text="Modify" />
+                  <TextField fx:id="tfw1" layoutX="314.0" layoutY="697.0" prefHeight="26.0" prefWidth="59.0" />
+                  <Label layoutX="798.0" layoutY="37.0" text="Find Shortest Path" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <Separator layoutX="634.0" layoutY="20.0" orientation="VERTICAL" prefHeight="712.0" prefWidth="0.0" />
+                  <TextField fx:id="tfs1" layoutX="712.0" layoutY="80.0" prefHeight="26.0" prefWidth="135.0" />
+                  <TextField fx:id="tfs2" layoutX="871.0" layoutY="80.0" prefHeight="26.0" prefWidth="125.0" />
+                  <Button layoutX="1121.0" layoutY="80.0" mnemonicParsing="false" onAction="#Dijsktra" style="-fx-background-color: #E83E3E;" text="find" />
+                  <Separator layoutX="698.0" layoutY="119.0" prefHeight="3.0" prefWidth="444.0" />
+                  <Label layoutX="718.0" layoutY="142.0" text="import file path input" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="tfimp" layoutX="718.0" layoutY="174.0" prefHeight="26.0" prefWidth="135.0" />
+                  <Button layoutX="872.0" layoutY="174.0" mnemonicParsing="false" onAction="#imp" style="-fx-background-color: #E83E3E;" text="Submit" />
+                  <TextArea fx:id="ta1" layoutX="653.0" layoutY="371.0" prefHeight="362.0" prefWidth="617.0" />
+                  <AnchorPane fx:id="gfield" layoutX="15.0" layoutY="941.0" onMouseClicked="#touch" prefHeight="666.0" prefWidth="1249.0" style="-fx-background-color: black;" />
+                  <Label layoutX="559.0" layoutY="892.0" text="Graph" textFill="#eb0a0a">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="959.0" layoutY="342.0" text="Output" textFill="#f25811">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton layoutX="1151.0" layoutY="854.0" mnemonicParsing="false" onAction="#change" style="-fx-background-color: #E83E3E;" text="ToggleButton" />
+                  <Button layoutX="998.0" layoutY="854.0" mnemonicParsing="false" onAction="#stop" style="-fx-background-color: #E83E3E;" text="Stop Animation" />
+                  <TextField fx:id="type" layoutX="1011.0" layoutY="80.0" prefHeight="26.0" prefWidth="92.0" />
+                  <Button layoutX="883.0" layoutY="854.0" mnemonicParsing="false" onAction="#wash" style="-fx-background-color: #E83E3E;" text="Clear Graph" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</GridPane>
